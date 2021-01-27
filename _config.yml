@@ -1,0 +1,49 @@
+# Site settings
+title: Mahesh Kumar Yadav
+description: 'M.Sc., CDCSIT, Tribhuvan University (TU), Kirtipur, Kathmandu, Nepal'
+url: 'http://thesis.maheshyadav.com.np'
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+disqus_shortname: 'maheshyadav-com-np'
+
+author:
+  name: 'Mahesh Kr. Yadav'
+  email: contact@maheshyadav.com.np
+  twitter_username: maheshdharhari
+  facebook_username: maheshdharhari
+  github_username:  maheshdharhari
+  bitbucket_username:  maheshdharhari
+  dribbble_username:  maheshdharhari
+  instagram_username:  maheshdharhari
+  pinterest_username:  maheshdharhari
+#  gplus_username:  +MaheshKumarYadavDharhari
+  youtube_username:  c/MaheshKumarYadavDharhari
+  linkedin_username:  maheshdharhari
+  uri: 'https://maheshyadav.com.np/'
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
